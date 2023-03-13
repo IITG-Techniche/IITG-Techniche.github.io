@@ -1,0 +1,315 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Karla", sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #DE5952;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    color: #FEFCF0;
+    text-decoration: none;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.navbar img {
+    width: 3em;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+
+}
+
+/* logo */
+/* .nav-branding{
+
+} */
+.nav-link {
+    transform: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #FEFCF0;
+}
+
+.button {
+    /* margin-left: 20px; */
+    padding: 9px 25px;
+    color: #FEFCF0;
+    background-color: rgb(0, 6, 8);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+}
+
+@media (max-width:768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #DE5952;
+        width: 100%;
+
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .button {
+        background-color: #DE5952;
+        font-size: 17px;
+    }
+}
+
+/*  */
+
+option {
+    background-color: #fffbeb;
+    padding: 2%;
+}
+
+.heading {
+    position: relative;
+    height: 30vh;
+}
+
+.heading h1 {
+    position: absolute;
+    font-family: 'Unbounded', cursive;
+    font-style: normal;
+    width: 600px;
+    top: 10%;
+    left: 55%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+label {
+    display: inline-block;
+    font-family: 'Karla';
+    font-size: 18px;
+    text-align: left;
+    vertical-align: top;
+}
+
+#agefield {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-left: 16.4%;
+    margin-top: -1.9%;
+}
+
+#agel {
+    margin-top: 6%;
+}
+
+#gender {
+    margin-left: 5%;
+}
+
+#genderfield {
+    display: flex;
+    flex-direction: column;
+}
+
+#genderselect {
+    height: 10%;
+    width: 62.5%;
+    margin-left: 5%;
+}
+
+input {
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+    background-color: #fffef8;
+    border-radius: 2.5px;
+}
+
+select {
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+    padding: 2%;
+    background-color: #fffef8;
+    border-radius: 2.5px;
+    border: 2px solid black;
+}
+
+#contactfield {
+    float: left;
+    margin-left: 16%;
+    margin-top: 1.3%;
+}
+
+#emailfield {
+    margin-top: 1%;
+    margin-right: 14%;
+}
+
+#country {
+    width: 50%;
+}
+
+#countryfield {
+    margin-top: 1.5%;
+    margin-left: 7.6%;
+}
+
+#state {
+    width: 50%;
+}
+
+#statefield {
+    margin-left: -7.0%;
+    margin-top: 1.5%;
+}
+
+
+#city {
+    padding: 0.9%;
+    width: 20%;
+}
+
+#cityfield {
+    margin-top: 1.15%;
+    margin-right: 15.7%;
+}
+
+#categoryfield {
+    margin-top: 2%;
+}
+
+#category {
+    width: 67.5%;
+    padding: 1%;
+}
+
+#q1field {
+    margin-top: 2%;
+}
+
+#q1 {
+    width: 67.5%;
+    padding: 1%;
+}
+
+#q2field {
+    margin-top: 2%;
+}
+
+#q2 {
+    width: 67.5%;
+    padding: 1%;
+}
+
+#submit {
+    padding: 6px 9px;
+    width: 13%;
+    float: right;
+    margin-right: 16.3%;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+#namefield {
+    display: flex;
+    flex-direction: column;
+    width: 67%;
+}
+
+#fname {
+    padding: 1.5%;
+}
+
+#age {
+    padding: 3%;
+}
+
+
+
+#college {
+    padding: 0.9% 0% 0.9% 0.9%;
+}
+
+#contact {
+    width: 235%;
+    padding: 6% 0% 6% 6%;
+}
+
+#email {
+    margin-left: 22%;
+    width: 37.8%;
+    padding: 0.9% 0% 0.9% 0.9%;
+}
+
+#stateInput {
+    padding: 2%;
+    width: 45%;
+}
+
+#cityInput {
+    padding: 0.8%;
+    width: 17%;
+}

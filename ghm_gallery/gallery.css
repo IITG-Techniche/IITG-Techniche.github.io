@@ -1,0 +1,388 @@
+body{
+
+   
+ 
+    text-align:center;
+    background: #DE5952;
+}
+
+
+
+header {
+    background-color: #DE5952;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    color: #FEFCF0;
+    text-decoration: none;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.navbar img {
+    width: 3em;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+
+}
+
+
+.nav-link {
+    transform: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #FFFEF8;
+}
+
+.button {
+    /* margin-left: 20px; */
+    padding: 9px 25px;
+    color: #FFFEF8;
+    background-color: rgb(0, 6, 8);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+}
+
+@media (max-width:768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #DE5952;
+        width: 100%;
+
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .button {
+        background-color: #DE5952;
+        font-size: 17px;
+    }
+}
+
+/* navbar end */
+
+
+.gallery_heading {
+    position: relative;
+    width: 100vw;
+    background-color: #FFFEF8;
+    padding: 40vh 0;
+    text-align: center;
+    font-weight: 1000%;
+}
+.image{
+    position: absolute;
+    z-index: 6;
+    bottom:0vh;
+}
+.image img{
+    width: 100%;
+    border-radius: 7px;
+}
+.gallery_heading h1 {
+    color: #DE5952;
+    font-family: 'Unbounded', cursive;
+    font-style: normal;
+    font-weight: 700;
+    background-color: FFFEF8;
+    font-size: 70px;
+    text-align: center;
+}
+
+
+.containerx{
+   
+    
+    position: relative;
+    background-color: #DE5952;
+    padding: 25% 10% 16% 10%;
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows:100px 300px;
+    grid-gap:20px;
+    grid-auto-flow: dense;
+}
+.image2{
+    position: absolute;
+    top:0;
+}
+.image2 img{
+    width: 100%;
+}
+.gallery-item{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+
+.gallery-item .image{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.gallery-item .image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position:50% 50%;
+    cursor:pointer;
+    transition:.5s ease-in-out;
+}
+
+
+.gallery-item .text{
+    opacity:0;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:#fff;
+    font-size:25px;
+    pointer-events:none;
+    z-index:4;
+    transition: .3s ease-in-out;
+    -webkit-backdrop-filter: blur(5px) saturate(1.8);
+    backdrop-filter: blur(5px) saturate(1.8);
+}
+
+
+
+.w-1{
+    grid-column: span 1;
+}
+.w-2{
+    grid-column: span 2;
+}
+.w-3{
+    grid-column: span 3;
+}
+.w-4{
+    grid-column: span 4;
+}
+.w-5{
+    grid-column: span 5;
+}
+.w-6{
+    grid-column: span 6;
+}
+
+.h-1{
+    grid-row: span 1;
+}
+.h-2{
+    grid-row: span 2;
+}
+.h-3{
+    grid-row: span 3;
+}
+.h-4{
+    grid-row: span 4;
+}
+.h-5{
+    grid-row: span 5;
+}
+.h-6{
+    grid-row: span 6;
+}
+
+
+
+
+@media screen and (max-width:500px){
+    .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .w-1,.w-2,.w-3,.w-4,.w-5,.w-6{
+        grid-column:span 1;
+    }
+}
+
+
+@keyframes move-down{
+
+    0%{
+        top:10%;
+    }
+    50%{
+        top:35%;
+    }
+    100%{
+        top:50%;
+    }
+}
+
+
+
+
+/* footer */
+
+
+/* footer start */
+.img-vct{
+    margin-top: 0%;
+  }
+  
+  @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+  
+
+  .footer-column{
+    border-left: 3px white;
+  }
+
+  
+  #footer {
+      background: #DE5952;
+  }
+  
+  #footer h5 {
+      padding-left: 10px;
+      padding-bottom: 6px;
+      /* margin-bottom: 20px; */
+      color: #ffffff;
+  }
+  
+  #footer a {
+      color: #ffffff;
+      text-decoration: none !important;
+      background-color: transparent;
+  }
+  
+  #footer ul.social li {
+      padding: 3px 0;
+  }
+  
+  #footer ul.social li a i {
+      margin-right: 5px;
+      font-size: 25px;
+      -webkit-transition: .5s all ease;
+      -moz-transition: .5s all ease;
+      transition: .5s all ease;
+  }
+  
+  #footer ul.social li:hover a i {
+      font-size: 30px;
+      margin-top: -10px;
+  }
+  
+  #footer ul.social li a {
+      color: #ffffff;
+  }
+  
+  #footer ul.social li a:hover {
+      color: #eeeeee;
+  }
+  
+  #footer ul.quick-links li a {
+      color: #ffffff;
+  }
+  
+  #footer ul.quick-links li {
+      padding: 3px 0;
+      -webkit-transition: .5s all ease;
+      -moz-transition: .5s all ease;
+      transition: .5s all ease;
+  }
+  
+  #footer ul.quick-links li:hover {
+      padding: 3px 0;
+      margin-left: 5px;
+      font-weight: 700;
+  }
+  
+  #footer ul.quick-links li a i {
+      margin-right: 5px;
+  }
+  
+  #footer ul.quick-links li:hover a i {
+      font-weight: 700;
+  }
+  #footer hr{
+    color: white;
+  }
+  #footer i{
+      color: white;
+  }
+  #footer li{
+      color: white;
+  }
+  
+  @media (max-width:767px) {
+      #footer h5 {
+          padding-left: 0;
+          border-left: transparent;
+          padding-bottom: 0px;
+          margin-bottom: 10px;
+      }
+  }
+  
+  #footer h2 {
+      padding: 25px 0;
+      text-align: center;
+      color: #fff;
+      background: #7c8490;
+  }
+  /* footer end */

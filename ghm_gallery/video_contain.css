@@ -1,0 +1,252 @@
+
+
+.video {
+    margin-top: 0%;
+   
+
+}
+
+
+.video_img {
+    position: relative;
+    margin-top: 4%;
+    width: 102%;
+    height: 90%;
+    margin-left: -1%;
+    margin-right: 0%;
+
+}
+
+.shoe {
+    height: 2rem;
+    position: absolute;
+    margin-top: -44%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title {
+    position: absolute;
+    margin-top: -40%;
+    height: 8rem;
+    width:8rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+   
+
+}
+
+.date{
+    position: absolute;
+    margin-top: -19%;
+    left: 53%;
+    width: 10.88rem;
+    height: 1.5rem;
+    transform: translateX(-50%);
+    color: aliceblue;
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Unbounded', cursive;
+    font-size: 1rem;
+    
+}
+
+
+.register_btn {
+    position: absolute;
+    margin-top: -13.5%;
+    left: 51%;
+    width:  8.3rem;
+    height: 1.80rem;
+
+    transform: translateX(-50%);
+    background-color: #D7FD8A;
+    border-radius: 25px;
+    border-color: #D7FD8A;
+    
+   
+    padding-top: 8px;
+    font-size: 50%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    font-weight: 600;
+    font-family: 'Bungee Spice', cursive;
+font-family: 'Karla', sans-serif;
+font-family: 'Unbounded', cursive;
+
+
+
+   
+}
+.register_btn:hover{
+   
+    background-color: #DE5952;
+    border-color: #DE5952;
+    
+    transition: background-color 0.3s,border-color 0.3s ;
+    transition-delay: 0.3s;
+    
+    
+   
+    
+
+   
+}
+
+@media (min-width: 768px) {
+    .title{
+        width:  20rem;
+        height: 10rem;
+        position: absolute;
+        margin-top: -36%;
+       
+        left: 50%;
+        transform: translateX(-50%);
+    }
+  }
+  
+  /* Image size for screens larger than 1200px */
+  @media (min-width: 1200px) {
+    .title{
+        position: absolute;
+    margin-top: -36%;
+    height: 14.5rem;
+    width:33rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+  @media (min-width: 768px) {
+    .shoe{
+        
+        height: 4rem;
+    position: absolute;
+    margin-top: -44%;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+  }
+  
+  /* Image size for screens larger than 1200px */
+  @media (min-width: 1200px) {
+    .shoe{
+        height: 6.3rem;
+        
+       
+    position: absolute;
+    margin-top: -44%;
+    left: 46%;
+    transform: translateX(-50%);
+
+    transform: rotate(15deg);
+    transition: transform 0.5s ease-in-out;
+
+    }
+  }
+  .shoe:hover{
+   
+    
+    transform: rotate(-15deg);
+   
+  }
+ 
+  
+  @keyframes rotateImage {
+    from {
+      transform: rotate(15deg);
+    }
+    to {
+      transform: rotate(-15deg);
+    }
+  }
+  @keyframes rotateImageafter {
+    from {
+      transform: rotate(-15deg);
+    }
+    to {
+      transform: rotate(15deg);
+    }
+  }
+  
+ 
+  @media (min-width: 768px) {
+    .date{
+        
+        width: 15.88rem;
+        height: 2rem;
+        font-size: 1.5rem;
+    }
+  }
+  
+  /* Image size for screens larger than 1200px */
+  @media (min-width: 1200px) {
+    .date{
+        width: 20.88rem;
+        height: 2.9rem;
+        font-size: 2rem;
+        font-family: 'Bungee Spice', cursive;
+        font-family: 'Karla', sans-serif;
+        font-family: 'Unbounded', cursive;
+
+    }
+  }
+
+  
+  @media (min-width: 768px) {
+    .register_btn{
+        
+        position: absolute;
+        margin-top: -13.5%;
+        left: 51%;
+        width:  10.3rem;
+        height: 2.80rem;
+    
+        transform: translateX(-50%);
+        background-color: #D7FD8A;
+        border-radius: 25px;
+        border-color: #D7FD8A;
+        
+       
+        padding-top: 15px;
+        font-size: 60%;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 15px;
+        font-weight: 600;
+        font-family: 'Bungee Spice', cursive;
+    font-family: 'Karla', sans-serif;
+    font-family: 'Unbounded', cursive;
+    transition: background-color 0.3s,border-color 0.3s ;
+    transition-delay: 0.3s;
+    }
+  }
+  
+  /* Image size for screens larger than 1200px */
+  @media (min-width: 1200px) {
+    .register_btn{
+        position: absolute;
+        margin-top: -13.5%;
+        left: 51%;
+        width:  15.3rem;
+        height: 3.80rem;
+    
+        transform: translateX(-50%);
+        background-color: #D7FD8A;
+        border-radius: 25px;
+        border-color: #D7FD8A;
+        
+       
+        padding-top: 15px;
+        font-size: 106%;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 15px;
+        font-weight: 600;
+        font-family: 'Bungee Spice', cursive;
+    font-family: 'Karla', sans-serif;
+    font-family: 'Unbounded', cursive;
+  }
+}

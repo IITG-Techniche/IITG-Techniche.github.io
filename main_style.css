@@ -383,7 +383,7 @@ font-family: 'Unbounded', cursive;
 @media (max-width: 600px) {
 /* CSS rules for mobile screens */
 .video_img{
-  content: url('Rectangle 2649.svg');
+  content: url('./static/Rectangle 2649.svg');
 }
 
 }

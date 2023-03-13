@@ -33,7 +33,6 @@ header{
 }
 /* logo */
 /* .nav-branding{
-
 } */
 .nav-link{
     transform: 0.7s ease;
@@ -172,6 +171,8 @@ text-align: center;
 padding: 11vh 0 5vh 0;
 
 }
+
+
 
 .heaad1{
     
@@ -325,7 +326,17 @@ margin-top: 15vh;
 
 
 
-
+  @media screen and (max-width:600px) {
+    p.heaad{
+        font-size: 40px;
+    }
+    img.map_image{
+        width: 80vw;
+    }
+    p.heaad1{
+        font-size: 40px;
+    }
+}
 
 /* marquee start */
 .scroll-images {
